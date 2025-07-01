@@ -1,0 +1,87 @@
+.GameApp {
+  text-align: center;
+}
+
+.GameApp-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .GameApp-logo {
+    animation: GameApp-logo-spin infinite 20s linear;
+  }
+}
+
+.GameApp-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.GameApp-link {
+  color: #61dafb;
+}
+
+@keyframes GameApp-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grid{
+    margin: auto;
+    justify-content: center;
+    align-items:  center;
+    width: 400px;
+}
+.grid button{
+    border-radius: 15px;
+    border-style: none;
+    background-color: aquamarine;
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+}
+.grid .square.hover{
+    background-color:red;
+}
+.grid img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: auto;
+    align-content: center;
+    padding: 0px;
+}
+
+.Container{
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+.Container .header{
+    margin: auto;
+    align-content: center;
+}
+.Container .chicken-header{
+    margin: auto;
+}
+.Container .restart{
+    margin: 10px auto;
+    border-radius: 25px;
+    border-style: none;
+    align-content: center;
+    background-color: aquamarine;
+    padding: 10px;
+    font-weight: bold;
+}
