@@ -36,13 +36,23 @@
     transform: rotate(360deg);
   }
 }
-
+.body{
+  justify-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  gap: 10px;
+}
 .textbox{
+  width: 22vh;
+  height: 22vh;
   text-align: center;
+  align-content: center;
   font-family: 'Courier New', Courier, monospace;
   padding: 6px;
   background-color:beige;
-  margin: 10px;
+  margin: auto 10px;
+  font-size: 1.3vh;
   border-radius:30px ;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -52,7 +62,23 @@
   font-weight: bold;
 }
 
-.textbox button{
+.counterbox2 {
+  width: 22vh;
+  height: 22vh;
+  margin: auto 10px;
+  border-radius:30px ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.counterbox{
+  margin: auto;
+}
+
+.counterbox button{
+  margin: auto;
   font-weight: bold;
   border-style:none;
   border-radius: 15px;
@@ -60,24 +86,43 @@
   cursor: pointer;
 }
 
-.textbox button:hover {
+.counterbox button:hover {
   background-color: #ED7D27;
   color:aliceblue;
 }
 
 .btnbox{
   text-align: center;
+  justify-content: center;
   font-family: 'Courier New', Courier, monospace;
   padding: 6px;
-  background-color:beige;
-  margin: 10px;
+  margin: auto 10px;
   border-radius:30px ;
 }
 .btnbox button{
-  width:100px;
+  width:22vh;
   font-weight: bold;
   border-style:none;
   border-radius: 15px;
   padding: 6px;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.btnbox button:hover{
+  font-weight: bold;
+  border-style:none;
+  border-radius: 15px;
+  padding: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btnbox img{
+  width: 20vh;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0 auto;
+  align-content: center;
+  padding: 0px;
 }

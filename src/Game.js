@@ -91,28 +91,24 @@ function GameApp() {
             </p>
         </div>
         <div className='grid'>
-            {images.map((tile, idx) => (
-            <button
+          {images.map((tile, idx) => {
+            const isFlipped = revealed[idx];
+            return (
+              <button
                 key={idx}
                 className="square"
-                style={{
-                    background: revealed[idx] ? '#f0f0f0' : '#ffcd80',
-                    cursor: gameOver || revealed[idx] ? 'not-allowed' : 'pointer',
-                }}
                 onClick={() => tileClick(idx)}
-                disabled={gameOver || revealed[idx]}
-            >
-                {revealed[idx] ? (
-                <img
-                className='imgSquare'
-                src={tile.img}
-                alt={tile.type}
-                />
-                ) : (
-                <span style={{ fontSize: 18 }}>{idx + 1}</span>
-                )}
-            </button>
-            ))}
+                disabled={isFlipped || gameOver}
+              >
+                <div className={`card-inner ${isFlipped ? "flip" : ""}`}>
+                  <div className="card-front">{idx + 1}</div>
+                  <div className="card-back">
+                    <img className="imgSquare" src={tile.img} alt={tile.type} />
+                  </div>
+                </div>
+              </button>
+            );
+          })}
         </div>
         <button className = 'restart' onClick={restart}>Restart Game</button>
     </div>

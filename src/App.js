@@ -1,6 +1,7 @@
 import './App.css';
 import {useState} from "react";
 import GameApp from './Game';
+import logo from './asset/logo.jpg'
 
 function Counter(){
   const [count, setCount] = useState(0);
@@ -10,7 +11,7 @@ function Counter(){
   }
 
   return(
-    <div className="textbox">
+    <div className="counterbox">
       <p>You clicked {count} times.</p>
       <button onClick={handleClick}>Click me</button>
     </div>
@@ -30,17 +31,17 @@ function App(){
   };
 
   return(
-    <div>
+    <div className='body'>
       <div className="textbox">
         <Welcome name="Medell Emmanuel"/>
         <Welcome name="Remolacio"/>
         <Welcome name="Castro"/>
       </div>
-      <div>
+      <div className="counterbox2">
         <Counter/>
       </div>
       <div className="btnbox">
-        <button type="button" onClick={GoToGame}>Play</button>
+        <button type="button" onClick={GoToGame}><img src={logo} alt="logo"></img> </button>
       </div>
     </div>
   )
