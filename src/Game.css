@@ -70,7 +70,6 @@
 }
 
 .card-front {
-  background-color: #ffcd80;
   font-weight: bold;
   font-size: 20px;
   color: #333;
@@ -113,12 +112,38 @@
     margin: auto;
 }
 .Container .restart{
-    margin: 10px auto;
+    margin: 40px auto;
     border-radius: 25px;
     border-style: none;
     align-content: center;
-    background-color: aquamarine;
+    background-color: rgb(247, 163, 55);
+    color: #2c2525;
+    width: 120px;
     padding: 10px;
     font-weight: bold;
 }
 
+.header{
+  width:55%;
+}
+.header .c-btn{
+  background-color: #fb6161;
+  border-radius: 25px;
+  border-style: none;
+  margin: auto 10px;
+  width: 100px;
+  padding: 10px;
+  color:aliceblue;
+  font-weight: bold;
+}
+
+.header .b-btn{
+  background-color: #80b3ff;
+  border-radius: 25px;
+  border-style: none;
+  margin: auto 10px;
+  width: 100px;
+  padding: 10px;
+  color:aliceblue;
+  font-weight: bold;
+}
